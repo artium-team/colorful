@@ -1,0 +1,44 @@
+body {
+    background-color: pink;
+}
+
+canvas {
+    border: 1px solid black;
+}
+
+#color-selector {
+    width: 402px; height:30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#color-selector > *{
+    border-color: whitesmoke;
+}
+
+#container, #top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#top > * {
+    color: white;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#save-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#save-button > * {
+    border: 0;
+    background-color: pink;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+}

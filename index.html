@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <title>Colorful</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+
+    <div id="top">        
+        <h1>Colorful!!!</h1>
+    </div>
+
+    <div id="container">
+        <div id="main">
+            <div id="color-selector">
+                <button style="background-color: #fff; width: 20px; height: 20px;" onclick="col='#fff'"></button>
+                <button style="background-color: #000000; width: 20px; height: 20px;" onclick="col='#000000'"></button>
+                <button style="background-color: #1D2B53; width: 20px; height: 20px;" onclick="col='#1D2B53'"></button>
+                <button style="background-color: #7E2553; width: 20px; height: 20px;" onclick="col='#7E2553'"></button>
+                <button style="background-color: #008751; width: 20px; height: 20px;" onclick="col='#008751'"></button>
+                <button style="background-color: #AB5236; width: 20px; height: 20px;" onclick="col='#AB5236'"></button>
+                <button style="background-color: #5F574F; width: 20px; height: 20px;" onclick="col='#5F574F'"></button>
+                <button style="background-color: #C2C3C7; width: 20px; height: 20px;" onclick="col='#C2C3C7'"></button>
+                <button style="background-color: #FFF1E8; width: 20px; height: 20px;" onclick="col='#FFF1E8'"></button>
+                <button style="background-color: #FF004D; width: 20px; height: 20px;" onclick="col='#FF004D'"></button>
+                <button style="background-color: #FFA300; width: 20px; height: 20px;" onclick="col='#FFA300'"></button>
+                <button style="background-color: #FFEC27; width: 20px; height: 20px;" onclick="col='#FFEC27'"></button>
+                <button style="background-color: #00E436; width: 20px; height: 20px;" onclick="col='#00E436'"></button>
+                <button style="background-color: #29ADFF; width: 20px; height: 20px;" onclick="col='#29ADFF'"></button>
+                <button style="background-color: #83769C; width: 20px; height: 20px;" onclick="col='#83769C'"></button>
+                <button style="background-color: #FF77A8; width: 20px; height: 20px;" onclick="col='#FF77A8'"></button>
+                <button style="background-color: #FFCCAA; width: 20px; height: 20px;" onclick="col='#FFCCAA'"></button>
+            </div>
+            <div id="save-button"><button onclick="saveCanvas('colorful')" style="font-weight: bold;">Download</button></div>
+        </div>
+    </div>    
+</body>
+</html>
