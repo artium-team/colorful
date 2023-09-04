@@ -20,7 +20,7 @@ function setup() {
 
     // pointsData.remove()
 
-    var canvas = createCanvas(400, 400)
+    createCanvas(400, 400)
     background(255)
     fill(col)
     noStroke()
@@ -29,8 +29,8 @@ function setup() {
         points.push(point.val())
     })
 
-    canvas.mousePressed(drawPoint)
-    canvas.mouseMoved(drawPointIfMousePressed)
+    mousePressed = drawPoint
+    mouseDragged = drawPoint
 
     $("canvas").detach().prependTo("#main");
 }
@@ -41,16 +41,10 @@ function draw() {
     for (var i = 0; i < points.length; i++) {
         var point = points[i]
         fill(point.color)
-        circle(point.x, point.y, 10)
+        circle(point.x, point.y, point.size)
     }
 }
 
-function drawPoint() {
-    pointsData.push({ x: mouseX, y: mouseY, color: col })
-}
-
-function drawPointIfMousePressed() {
-    if (mouseIsPressed) {
-      drawPoint()
-    }
+async function drawPoint() {
+    await pointsData.push({ x: mouseX, y: mouseY, color: col, size: Math.floor(Math.random() * 15) + 5 })
 }
