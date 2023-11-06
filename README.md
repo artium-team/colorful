@@ -3,6 +3,6 @@
 
 Artium Colorful is inspired by Reddit r/Place. 
 
-But different from r/Place, there is no time limit in Colorful, and instead of pixel, we have a paintbrush!
+But different from r/Place, there is `no time limit` in Colorful, and instead of `pixel`, we have a `paintbrush`!
 
 What are you waiting for, try it now!!!
