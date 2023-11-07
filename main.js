@@ -25,7 +25,7 @@ function setup() {
     fill(col)
     noStroke()
 
-    pointsData.on('child_added', function (point) {
+    pointsData.limitToLast(5000).on('child_added', function (point) {
         points.push(point.val())
     })
 
